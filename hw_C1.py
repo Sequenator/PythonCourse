@@ -6,11 +6,7 @@ print('Следующие элементы последовательности 
 
 i = 1
 
-l = len(a)
-
 for n in a:
-    if i == l:
-        break
-    if a[i] > n:
+    if int(a[i]) > int(n):
         print(a[i])
     i += 1
