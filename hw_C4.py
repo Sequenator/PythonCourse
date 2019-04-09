@@ -8,7 +8,15 @@ a = int(a[0])
 
 D = b ** 2 - 4 * a * c
 
-if D < 0:
+if a == 0 and b == 0 and c == 0:
+    print('x - любое число')
+elif a == 0:
+    if b == 0:
+        print('Корней нет')
+    else:
+        x = -c / b
+        print(f'x = {x}')
+elif D < 0:
     print('Действительных корней нет')
 elif D == 0:
     x = -b / (2 * a)
